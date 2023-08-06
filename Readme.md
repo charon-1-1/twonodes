@@ -100,6 +100,7 @@ wget https://raw.githubusercontent.com/hyperledger/fabric-samples/3d2875c180c67d
 # 编译链码
 docker exec -it cli1 bash
 cd /opt/gopath/src/github.com/hyperledger/fabric/examples/chaincode/go
+设置goproxy代理：go env -w GOPROXY=https://goproxy.cn,direct
 go mod init
 go mod tidy
 go mod vendor
